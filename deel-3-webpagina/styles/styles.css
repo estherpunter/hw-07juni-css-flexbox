@@ -20,6 +20,9 @@ Old rose #C16E70
 
 body {
     background-color: #F2F3D9;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -35,6 +38,7 @@ h1 {
 
 h3 {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .main-cols div {
@@ -45,6 +49,26 @@ h3 {
     padding: 20px;
 }
 
+nav {
+    background: #151E3F;
+    color: #FFF;
+    padding: 10px 40px;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav p {
+    font-weight: bold;
+}
+
 /* 3. Flexbox*/
 
 body {
@@ -53,15 +77,32 @@ body {
     height: 100vh;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 400px;
+}
+
 .main-cols {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 350px;
+    justify-content: center;
+    flex-basis: 350px;
     gap: 30px;
-
 }
 
 .main-cols div {
+    display: flex;
+    flex-direction: row;
     flex-basis: 280px;
+    align-items: flex-end;
+    /*flex-shrink: 1;*/
 }

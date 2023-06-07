@@ -97,6 +97,7 @@ ul {
     justify-content: center;
     flex-basis: 350px;
     gap: 30px;
+    margin: 20px;
 }
 
 .main-cols div {

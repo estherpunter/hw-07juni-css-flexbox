@@ -1,1 +1,80 @@
 /*Schrijf hier jouw CSS*/
+
+ /*Deelopdracht 1*/
+
+ .opdracht-1 ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+/*Deelopdracht 2*/
+
+.opdracht-2 ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.opdracht-2 ul li {
+    flex-basis: 300px;
+}
+
+/*Deelopdracht 3*/
+
+.opdracht-3 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-1 {
+    align-self: flex-start;
+}
+
+.item-2 {
+    align-self: center;
+}
+
+.item-3 {
+    align-self: flex-end;
+}
+
+/*Deelopdracht 4*/
+
+.opdracht-4 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*Deelopdracht 5*/
+
+.opdracht-5 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div ul {
+    /*border: 2px dotted red;*/
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /*justify-content: space-between;*/
+/*    Met justify-content komt er geen ruimte tussen top en bottom?*/
+}
+
+
+.column-1 {
+    align-items: flex-start;
+}
+
+.column-2 {
+    align-items: center;
+}
+
+.column-3 {
+    align-items: flex-end;
+}

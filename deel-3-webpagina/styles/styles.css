@@ -1,1 +1,109 @@
 /*Schrijf hier jouw css*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Inhoudsopgave
+
+1. Global styles
+2. Typography
+3. Flexbox
+
+
+Color palet:
+Space cadet #151E3F
+Oxford blue #030027
+Beige #F2F3D9
+Buff #DC9E82
+Old rose #C16E70
+*/
+
+/* 1. Global styles*/
+
+body {
+    background-color: #F2F3D9;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 2. Typography*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-cols div {
+    background-color: #C16E70;
+    color: #151E3F;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+nav {
+    background: #151E3F;
+    color: #FFF;
+    padding: 10px 40px;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav p {
+    font-weight: bold;
+}
+
+/* 3. Flexbox*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 400px;
+}
+
+.main-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 350px;
+    gap: 30px;
+    margin: 20px;
+}
+
+.main-cols div {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 280px;
+    align-items: flex-end;
+    /*flex-shrink: 1;*/
+}
